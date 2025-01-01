@@ -72,4 +72,5 @@ contract MyNFT is ERC721("My NFT", "MNFT"),Ownable(address(msg.sender)) {
     function getPrice(uint256 tokenId) public view returns (uint256) {
         return _tokenPrices[tokenId];
     }
+
 }
